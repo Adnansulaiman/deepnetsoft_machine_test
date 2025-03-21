@@ -9,8 +9,8 @@ const Hero = () => {
       style={{ backgroundImage: `url(${Banner})` }}
     ></div>
     
-    <h1 className='text-6xl font-black uppercase z-10'>Menu</h1>
-    <p className='text-lg max-w-2xl text-center z-10 text-slate-200'>
+    <h1 className='md:text-6xl text-5xl font-black uppercase z-10'>Menu</h1>
+    <p className='md:text-lg text-md md:max-w-2xl max-w-md text-center z-10 text-slate-200'>
       Please take a look at our menu featuring food, drinks and brunch. If you'd like to place an order, use the "Order Online" button located below the menu.
     </p>
   </div>
