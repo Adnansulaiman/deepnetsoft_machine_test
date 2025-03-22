@@ -99,6 +99,7 @@ const addMenuItem = async (e) => {
       );
     console.log("Menu item added successfully", response.data);
     handleMenuClick(selectedMenu); 
+    
     setMenuItemData({ name: "", price: "", description: "" });
   } catch (error) {
     console.error("Error adding menu item", error);
@@ -243,7 +244,7 @@ const addMenuItem = async (e) => {
           </div>
         </div>
       )}
-      <MenuList data={showedMenu || menus[0]} />
+      <MenuList selectedMenu={showedMenu || menus[0]} />
     </>
   );
 };
