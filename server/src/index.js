@@ -7,7 +7,6 @@ const connectDB = require('./config/db.config');
 
 
 
-
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -19,6 +18,8 @@ app.use(cors());
 connectDB();
 
 //Routes
+const menuRoutes = require('./routes/menu.routes');
+app.use('/api/menus', menuRoutes);
 
 
 app.get('/', (req,res) => {
