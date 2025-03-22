@@ -3,7 +3,7 @@ import Logo from "../assets/images/logo.png";
 import { IoMdMenu,IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
   };

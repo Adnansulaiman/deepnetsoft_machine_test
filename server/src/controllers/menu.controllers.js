@@ -45,7 +45,7 @@ const getMenuById = async (req, res) => {
 const addMenuItem = async (req, res) => {
   try {
     const { name, description, price } = req.body;
-    const menu = await Menu.findById(req.params.menuId);
+    const menu = await Menu.findById(req.params.id);
 
     if (!menu) return res.status(404).json({ error: "Menu not found" });
 
